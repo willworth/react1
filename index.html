@@ -13,10 +13,16 @@
 <body>
     <div id ="container"></div>
     <script type="text/babel">
-    ReactDOM.render(
 
-        <h2>This is React!</h2>,
-        document.getElementById('container')
+    var Piano = React.createClass({
+            render: function () {
+
+                return(<h3>This is a simple component!</h3>);
+            }
+
+
+    });
+    ReactDOM.render(<Piano />, document.getElementById('container')
     );    
     </script>
 
